@@ -53,4 +53,3 @@ INDEX VERSION 1.130+C:\Users\training_d2.03.07\Desktop\New folder\.metadata\.plu
 2458502245.index
 3242100831.index
 2683794343.index
-2127969372.index

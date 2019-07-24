@@ -4316,3 +4316,17 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 2019-07-24 14:36:56,218 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\main\resources
 2019-07-24 14:36:56,250 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-24 14:36:56,250 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\test\resources
+2019-07-24 14:53:38,740 [Worker-323] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pogram1:program1:0.0.1-SNAPSHOT @ C:\Users\training_d2.03.07\Desktop\New folder\program1\pom.xml.
+2019-07-24 14:53:52,458 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:53:52,458 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\program1\src\main\resources
+2019-07-24 14:53:52,458 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:53:52,473 [Worker-323] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\program1\src\test\resources
+2019-07-24 14:53:52,926 [Worker-321] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2019-07-24 14:53:53,098 [Worker-321] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: pogram1:program1:0.0.1-SNAPSHOT @ C:\Users\training_d2.03.07\Desktop\New folder\program1\pom.xml.
+2019-07-24 14:53:53,489 [Worker-321] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /program1/src/main/java
+2019-07-24 14:53:53,489 [Worker-321] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /program1/src/test/java
+2019-07-24 14:53:53,833 [Worker-321] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2019-07-24 14:53:56,595 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:53:56,595 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\program1\src\main\resources
+2019-07-24 14:53:56,610 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:53:56,610 [Worker-324] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\program1\src\test\resources
