@@ -2022,3 +2022,19 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2019-07-24 14:08:25.791
 !MESSAGE The POM for org.selenium:org.apache.commons.io:jar:2.4 is missing, no dependency information available
+
+!ENTRY org.eclipse.egit.core 4 0 2019-07-24 14:41:06.778
+!MESSAGE An exception occurred during push on URI https://github.com/hajira4198/mydemo_01.git: https://github.com/hajira4198/mydemo_01.git: not authorized
+!STACK 0
+org.eclipse.jgit.errors.TransportException: https://github.com/hajira4198/mydemo_01.git: not authorized
+	at org.eclipse.jgit.transport.TransportHttp.connect(TransportHttp.java:570)
+	at org.eclipse.jgit.transport.TransportHttp.openPush(TransportHttp.java:466)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:160)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1367)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:191)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:86)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:59)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+
+!ENTRY org.eclipse.egit.ui 4 0 2019-07-24 14:41:07.114
+!MESSAGE Can't connect to any repository: https://github.com/hajira4198/mydemo_01.git (https://github.com/hajira4198/mydemo_01.git: not authorized)
