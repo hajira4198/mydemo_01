@@ -2019,3 +2019,6 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 
 !ENTRY org.eclipse.recommenders.models.rcp 1 0 2019-07-24 12:05:12.402
 !MESSAGE jre:jre:call:zip:1.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2019-07-24 14:08:25.791
+!MESSAGE The POM for org.selenium:org.apache.commons.io:jar:2.4 is missing, no dependency information available
