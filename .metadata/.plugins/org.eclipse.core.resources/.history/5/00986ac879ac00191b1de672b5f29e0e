@@ -1,0 +1,55 @@
+package casestudy;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class OnlineShoppingTest {
+	WebDriver d;
+  @Test
+  public void f() throws InterruptedException {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("http://10.232.237.143:443/TestMeApp");
+	  d.manage().window().maximize();
+	  d.findElement(By.xpath("//a[@href='login.htm']")).click();
+	  d.findElement(By.xpath("//input[@name='userName']")).sendKeys("asdfgh");
+	  d.findElement(By.xpath("//input[@name='password']")).sendKeys("asdfgh");
+	  d.findElement(By.xpath("//input[@name='Login']")).click();
+	  d.findElement(By.xpath("//*[@id=\"menu3\"]/li[2]/a/span")).click();
+	  Actions a=new Actions(d);
+	  WebElement e1=d.findElement(By.xpath("//span[contains(text(),'Home Appliances')]"));
+	  a.click(e1).build().perform();
+	  Thread.sleep(5000);
+	  WebElement e2=d.findElement(By.xpath("//span[contains(text(),'Floor')]"));
+	  a.doubleClick(e2).build().perform();
+	  
+	  Set<String> t_windows=d.getWindowHandles();
+		//  int cnt_window=t_windows.size();
+		 // System.out.println(cnt_window);
+		  for (String s : t_windows) {
+			  d.switchTo().window(s);
+			  System.out.println(d.getWindowHandle());
+			  
+		  }
+		  
+	  
+	  WebElement e3= d.findElement(By.xpath("//a[contains(text(),' Add to cart')]"));
+	  a.click(e3).build().perform();
+	  d.findElement(By.xpath("//a[@href='displayCart.htm']")).click();
+	  
+	  d.findElement(By.xpath("//a[@href='checkout.htm']")).click();
+	  
+	  
+	  
+//	  Actions a=new Actions(d);
+//	  a.doubleClick(e1).build().perform();
+//	  
+	 // d.close();
+  }
+}

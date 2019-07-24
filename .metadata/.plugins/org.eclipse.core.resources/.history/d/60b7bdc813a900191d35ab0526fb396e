@@ -1,0 +1,25 @@
+package pogram1.program1;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+
+public class handson {
+  @Test(dataProvider = "dp")
+  public void f(String n, String s) {
+	  System.out.println("login");
+  }
+
+  @DataProvider
+  public Object[][] dp() {
+    return new Object[][] {
+      new Object[] { "asdfgh", "asdfgh" },
+      new Object[] { "qwerty", "qwerty" },
+    };
+  }
+  @BeforeClass
+  public void beforeClass() {
+	  System.out.println("launching of the test");
+  }
+  
+}

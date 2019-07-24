@@ -1,0 +1,10 @@
+Feature: My validation opnn mercury tours
+Scenario: Login for registered user
+
+Given Apllication URL is not working
+When user enters username
+And user enters password
+Then he clickles on the submit button
+And verifies the login process
+Then he choses to close the application
+And he close the browser

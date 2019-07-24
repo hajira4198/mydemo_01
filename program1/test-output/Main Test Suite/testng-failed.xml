@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="5" name="Failed suite [Main Test Suite]">
+  <parameter name="OS" value="Windows"/>
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" verbose="5" name="Test(failed)">
+    <classes>
+      <class name="casestudy.shopping">
+        <methods>
+          <include name="testLogin"/>
+          <include name="afterClass"/>
+          <include name="afterTest"/>
+          <include name="afterMethod"/>
+          <include name="startReport"/>
+          <include name="beforeclass"/>
+        </methods>
+      </class> <!-- casestudy.shopping -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Main Test Suite] -->

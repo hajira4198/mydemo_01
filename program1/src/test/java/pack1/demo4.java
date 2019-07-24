@@ -1,0 +1,43 @@
+package pack1;
+
+import org.testng.annotations.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.DataProvider;
+
+public class demo4 {
+	WebDriver d;
+  @Test(dataProvider = "loginData")
+  public void testLogin(String n, String s) throws InterruptedException {
+	  Thread.sleep(5000);
+	 
+	  d.findElement(By.xpath("//a[@href='login.htm']")).click();
+	  d.findElement(By.xpath("//input[@name='userName']")).sendKeys(n);
+	  d.findElement(By.xpath("//input[@name='password']")).sendKeys(s);
+	  d.findElement(By.xpath("//input[@name='Login']")).click();
+  }
+
+  @DataProvider
+  public Object[][] loginData() {
+    return new Object[][] {
+      new Object[] { "qwerty", "qwerty" },
+      new Object[] { "asdfgh", "asdfgh" },
+      new Object[] { "zxcvbn", "zxcvbn" },
+      new Object[] { "ram123", "ram123" }
+    };
+  }
+  @AfterMethod
+  public void aftermethod(){
+	  d.findElement(By.xpath("//a[contains(text(),'SignOut')]")).click();
+  }
+  @BeforeClass
+  public void before() {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("http://10.232.237.143:443/TestMeApp");
+	  d.manage().window().maximize();
+  }
+}

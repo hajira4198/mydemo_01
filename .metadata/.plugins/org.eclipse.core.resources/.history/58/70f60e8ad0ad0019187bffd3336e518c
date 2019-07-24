@@ -1,0 +1,37 @@
+package defs;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class testmelogin {
+	@Given("I am launching the test me apllication in chrome")
+	public void i_am_launching_the_test_me_apllication_in_chrome() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Given("I click on SignIn link")
+	public void i_click_on_SignIn_link() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("I provide {string}")
+	public void i_provide(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@When("I provide password {string}")
+	public void i_provide_password(String string) {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+
+	@Then("I click on login and verify the login status")
+	public void i_click_on_login_and_verify_the_login_status() {
+	    // Write code here that turns the phrase above into concrete actions
+	    throw new cucumber.api.PendingException();
+	}
+}

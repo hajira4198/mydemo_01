@@ -1,0 +1,33 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class keyboarddemo1 {
+	WebDriver d;
+  @Test
+  public void f() throws InterruptedException {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("https://www.google.com/");
+	  d.manage().window().maximize();
+	  WebElement s=d.findElement(By.xpath("//input[@name='q']"));
+	
+      Actions a=new Actions(d);
+      
+      a.keyDown(s,Keys.CONTROL).sendKeys("Accenture").build().perform();
+      Thread.sleep(5000);
+	  a.keyDown(s,Keys.SHIFT).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).keyUp(Keys.SHIFT).build().perform();
+	  d.close();
+	  
+	  //other way 
+	  //a.sendKeys("Accenture");
+	  //a.keyDown(s,Keys.SHIFT).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).keyUp(Keys.SHIFT).build().perform();
+	  
+  }
+}

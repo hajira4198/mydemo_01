@@ -1,0 +1,21 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class prog1 {
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("http://10.232.237.143:443/TestMeApp");
+		Thread.sleep(20);
+		WebElement x=driver.findElement(By.xpath("//a[text()='SignIn']"));
+		x.click();
+	}
+
+}

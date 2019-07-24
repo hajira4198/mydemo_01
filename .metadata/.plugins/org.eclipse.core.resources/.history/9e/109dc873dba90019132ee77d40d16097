@@ -1,0 +1,24 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+//right click
+public class gmail {
+	WebDriver d;
+  @Test
+  public void f() {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("https://demos.telerik.com/aspnet-ajax/treeview/examples/overview/defaultcs.aspx");
+	  d.manage().window().maximize();
+	  WebElement so=d.findElement(By.xpath("//*[@id=\"ctl00_ContentPlaceholder1_RadTreeView2\"]/ul/li/ul/li[1]/div/div/span"));
+	  d.findElement(By.xpath("//a[text()='Gmail']"));
+	  Actions a=new Actions(d);
+	  a.contextClick(so).build().perform();
+	  d.close();
+  }
+}

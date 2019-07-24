@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Myrunner" project="cucumberdemo01" tests="3" started="3" failures="0" errors="0" ignored="0">
+  <testsuite name="hajira_runners.Myrunner" time="0.313">
+    <testsuite name="Feature: My validations on American express" time="0.313">
+      <testcase name="I want to log-in" classname="My validations on American express" time="0.032"/>
+      <testcase name="I want to view my membership" classname="My validations on American express" time="0.016"/>
+      <testcase name="I want to refer my friend" classname="My validations on American express" time="0.265"/>
+    </testsuite>
+  </testsuite>
+</testrun>

@@ -1,0 +1,9 @@
+package pack1;
+
+import org.testng.annotations.Test;
+
+public class windowsdemo1 {
+  @Test
+  public void f() {
+  }
+}

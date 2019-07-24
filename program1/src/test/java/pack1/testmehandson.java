@@ -1,0 +1,46 @@
+package pack1;
+
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class testmehandson {
+	WebDriver d;
+  @Test
+  public void f() {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
+	  d.manage().window().maximize();
+	  
+	  WebElement e1=d.findElement(By.xpath("//span[text()='AboutUs']"));
+	  Actions a=new Actions(d);
+	  a.click(e1).build().perform();
+	  
+	  WebElement e2=d.findElement(By.xpath("//*[@id=\"menu3\"]/li[3]/ul/li/a/span"));
+	  a.click(e2).build().perform();
+	  
+	  WebElement e3=d.findElement(By.xpath("//*[@id=\"menu3\"]/li[3]/ul/li/ul/li[2]/a/span"));
+	  a.click(e3).build().perform();
+	  
+	  Set<String> t_windows=d.getWindowHandles();
+	//  int cnt_window=t_windows.size();
+	 // System.out.println(cnt_window);
+	  for (String s : t_windows) {
+		  d.switchTo().window(s);
+		  System.out.println(d.getWindowHandle());
+		  
+	  }
+	  
+	  d.switchTo().frame(d.findElement(By.name("main_page")));
+	  String s=d.findElement(By.xpath("//address[@id='demo3']")).getText();
+	  System.out.println(s);
+	  //a.doubleClick(e1).build().perform();
+	  d.close();
+  }
+}

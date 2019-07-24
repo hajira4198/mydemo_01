@@ -1,0 +1,68 @@
+package pack1;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Test;
+
+public class exceldemo1 {
+  @Test
+  public void excel() throws IOException {
+	  
+	  XSSFWorkbook workbook=new XSSFWorkbook();
+	  FileOutputStream out=new FileOutputStream(new File("demo1.xlsx"));
+	  workbook.write(out);
+	  out.close();
+	  System.out.println("workbook written successfully");
+	  
+  }
+  @Test
+  public void readdata() throws IOException {
+	  File src=new File("C:\\Users\\training_d2.03.07\\Desktop\\_Stream_Training\\Week3_Selenium_Java\\travellers.xlsx");
+	  FileInputStream fi = new FileInputStream(src);
+	  XSSFWorkbook wb=new XSSFWorkbook(fi);
+	  XSSFSheet s1=wb.getSheetAt(0);
+	  
+	  int rowCount = s1.getLastRowNum();
+	  for(int i=0;i<=rowCount;i++) {
+		  String data=s1.getRow(i).getCell(0).getStringCellValue();
+		  System.out.println("test data from excel is: "+data);
+//		  
+//		  String data1=s1.getRow(i).getCell(1).getStringCellValue();
+//		  System.out.println("test data from excel is: "+data1);
+		  
+	  }
+	  wb.close();
+	  
+  }
+  @Test
+  public void writedata() throws IOException {
+	  File src=new File("C:\\Users\\training_d2.03.07\\Desktop\\_Stream_Training\\Week3_Selenium_Java\\travellers.xlsx");
+	  FileInputStream fi = new FileInputStream(src);
+	  XSSFWorkbook wb=new XSSFWorkbook(fi);
+	  XSSFSheet s1=wb.getSheetAt(0);
+	  
+	  int rowCount = s1.getLastRowNum();
+	  for(int i=0;i<=rowCount;i++) {
+		  String data=s1.getRow(i).getCell(0).getStringCellValue();
+		  System.out.println("test data from excel is: "+data);
+//		  
+//		  String data1=s1.getRow(i).getCell(1).getStringCellValue();
+//		  System.out.println("test data from excel is: "+data1);
+		  
+	  }
+	  s1.getRow(0).createCell(1).setCellValue("result");
+	  s1.getRow(1).createCell(1).setCellValue("valid user");
+	  s1.getRow(2).createCell(1).setCellValue("valid pass");
+	  
+	  FileOutputStream fout=new FileOutputStream(new File("C:\\Users\\training_d2.03.07\\Desktop\\_Stream_Training\\Week3_Selenium_Java\\travellers.xlsx"));
+	  wb.write(fout);
+	  fout.close();
+	  
+}
+}

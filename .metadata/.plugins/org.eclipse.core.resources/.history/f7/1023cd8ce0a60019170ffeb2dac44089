@@ -1,0 +1,25 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class class1 {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver_win32\\chromedriver.exe");
+		driver=new ChromeDriver();
+		driver.get("http://www.google.com");
+		driver.manage().window().maximize();
+		driver.close();
+		//int a=10;
+		//int b=20;
+		//int sum=a+b;
+		//System.out.println("The total is : "+sum);
+	//	driver.findElement(By.name("userName")).sendKeys("Hajira");
+		
+
+	}
+
+}

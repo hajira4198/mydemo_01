@@ -1,0 +1,22 @@
+package pack1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
+
+public class mouseactions {
+	WebDriver d;
+  @Test
+  public void func() {
+	  System.setProperty("webdriver.chrome.driver", "C:\\drivers\\chromedriver_win32 (1)\\chromedriver.exe");
+	  d = new ChromeDriver();
+	  d.get("https://www.spicejet.com/");
+	  d.manage().window().maximize();
+	  WebElement e1=d.findElement(By.xpath("//a[@id='highlight-addons']"));
+	  Actions a=new Actions(d);
+	  a.moveToElement(e1).build().perform();
+  }
+}
