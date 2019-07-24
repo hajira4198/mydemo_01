@@ -4308,3 +4308,11 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Failure to fin
 2019-07-24 14:12:10,938 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\main\resources
 2019-07-24 14:12:10,969 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-07-24 14:12:10,969 [Worker-310] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\test\resources
+2019-07-24 14:36:37,780 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:36:37,780 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\main\resources
+2019-07-24 14:36:37,780 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:36:37,780 [Worker-316] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\test\resources
+2019-07-24 14:36:56,203 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:36:56,218 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\main\resources
+2019-07-24 14:36:56,250 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-07-24 14:36:56,250 [Worker-319] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\training_d2.03.07\Desktop\New folder\cucumberdemo01\src\test\resources
